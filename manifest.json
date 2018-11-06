@@ -1,0 +1,31 @@
+{
+    "manifest_version": 2,
+    "name": "tabselect",
+    "version": "1.0",
+    "description": "Jump to tab using substring search",
+    "icons": {
+	"32": "icons/tabselect-32.png",
+	"48": "icons/tabselect-48.png",
+	"96": "icons/tabselect-96.png",
+	"128": "icons/tabselect-128.png"
+    },
+    "commands": {
+	"_execute_browser_action": {
+	    "suggested_key": {
+		"default": "Ctrl+Shift+Q",
+		"mac": "MacCtrl+Shift+Q"
+	    },
+	    "description": "Open tab selector"
+	}
+    },
+    "browser_action": {
+	"default_title": "Select tab",
+	"default_popup": "popup/tabselect.html",
+	"default_icon": {
+	    "16": "icons/tabselect-16.png",
+	    "24": "icons/tabselect-24.png",
+	    "32": "icons/tabselect-32.png"
+	}
+    },
+    "permissions": ["tabs"]
+}
